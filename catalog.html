@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Book Catalog</h2>
+            <div class="book-list">
+                <!-- Book Item 1 -->
+                <div class="book-item">
+                    <img src="images/book1.jpg" alt="Book 1 Cover" class="book-cover">
+                    <h3>Book Title 1</h3>
+                    <p>Author: John Doe</p>
+                    <button onclick="openBook('book1.html')">Read More</button>
+                </div>
+                <!-- Book Item 2 -->
+                <div class="book-item">
+                    <img src="images/book2.jpg" alt="Book 2 Cover" class="book-cover">
+                    <h3>Book Title 2</h3>
+                    <p>Author: Jane Smith</p>
+                    <button onclick="openBook('book2.html')">Read More</button>
+                </div>
+                <!-- Book Item 3 -->
+                <div class="book-item">
+                    <img src="images/book3.jpg" alt="Book 3 Cover" class="book-cover">
+                    <h3>Book Title 3</h3>
+                    <p>Author: Emily White</p>
+                    <button onclick="openBook('book3.html')">Read More</button>
+                </div>
+                <!-- Add more books here as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+
+    <script>
+        function openBook(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
